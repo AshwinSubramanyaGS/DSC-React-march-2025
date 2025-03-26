@@ -1,7 +1,10 @@
-function MarqueeText(){
+import NavBar from "./header/NavBar"
+
+function MarqueeText({direction,text}){
     return(
         <>
-            <marquee ><h1>hi welcome to react</h1></marquee>
+            <NavBar pageNo="2" />
+            <marquee direction={direction}><h1>{text}</h1></marquee>
         </>
     )
 }
